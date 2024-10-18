@@ -9,7 +9,7 @@ async function calculateDistance() {
 
     // 3秒後に処理を実行
     setTimeout(async () => {
-        const response = await fetch(`http://shorttransfe.raptech.jp/distance?address1=${encodeURIComponent(address1)}&address2=${encodeURIComponent(address2)}`);
+        const response = await fetch(`https://shorttransfer.raptech.jp/distance?address1=${encodeURIComponent(address1)}&address2=${encodeURIComponent(address2)}`);
         
         console.log(response); // レスポンスの確認
 
@@ -29,5 +29,5 @@ async function calculateDistance() {
 
         // 処理が終わったら検索中メッセージを隠す
         loadingElement.style.display = "none";
-    }, 3000); // 3000ミリ秒（3秒）待つ
+    },1); // 3000ミリ秒（3秒）待つ
 }
