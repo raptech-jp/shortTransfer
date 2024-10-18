@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>最短移動経路</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>最短移動経路</h1>
+    <div>
+        <label for="address1">住所1:</label>
+        <input type="text" id="address1" placeholder="例：東京駅">
+    </div>
+    <div>
+        <label for="address2">住所2:</label>
+        <input type="text" id="address2" placeholder="例：新大阪駅">
+    </div>
+    <button onclick="calculateDistance()">ルート検索</button>
+    <div id="loading" style="display: none;">検索中...</div>
+    <div id="result"></div>
+</body>
+</html>
